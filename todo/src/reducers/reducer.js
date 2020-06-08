@@ -5,7 +5,7 @@ const initialState = {
     done: false,
     id: 3892987589
 }
-export const reducer = (state, action) => {
+export const Reducer = (state, action) => {
     switch (action.type) {
         case "complete":
             return {
