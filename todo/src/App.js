@@ -1,10 +1,14 @@
-import React from 'react';
+import React, {useState, useReducer} from 'react';
 import logo from './logo.svg';
 import './App.css';
-import reducer from './reducers/reducer';
+import {initialState, reducer} from './reducers/reducer';
 import Todolist from './todolist';
 
 function App() {
+const [newTask, setNewTask] = useState("");
+const [state , dispatch] = useReducer(reducer, initialState);
+
+
   return (
     <div className="App">
       <header className="App-header">
@@ -12,7 +16,7 @@ function App() {
           <form>
             <label>
             <h4>Task:
-             <input type="text-area" name="task" />
+             <input type="text-area" name="task" value=""  />
              <button>Add</button></h4>
             </label>
           </form>
