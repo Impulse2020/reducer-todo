@@ -17,6 +17,10 @@ const handleSubmit = e =>{
   e.preventDefault();   
   dispatch({ type: "Add_Task", payload: newTask})
 }
+const complete = e =>{
+e.target.value.done = true;  
+}
+
 console.log(state.list);
   return (
    

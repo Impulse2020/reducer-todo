@@ -19,11 +19,6 @@ export const Reducer = (state, action) => {
                 ...state,
                 done: true
             }
-        case "incomplete":
-            return {
-                ...state,
-                done: false
-            }
          default:
              return state;
     }
