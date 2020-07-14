@@ -16,6 +16,7 @@ setNewTask(e.target.value)
 const handleSubmit = e =>{
   e.preventDefault();   
   dispatch({ type: "Add_Task", payload: newTask})
+  setNewTask("")
 }
 const complete = e =>{
   dispatch({ type:complete})
