@@ -24,28 +24,29 @@ In this project, you build an app that let's you display a todo list from reduce
 - [X] CD into the react app directory `cd todo`.
 - [X] Start up the app using `npm start`.
 - [X] Create a new branch: git checkout -b `<firstName-lastName>`.
-- [] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
-- [ ] Push commits: git push origin `<firstName-lastName>`.
+- [X] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
+- [X] Push commits: git push origin `<firstName-lastName>`.
 
 Follow these steps for completing your project.
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's Repository). **Please don't merge your own pull request**
-- [ ] Add your team lead as a reviewer on the pull-request
-- [ ] Your team lead will count the project as complete by merging the branch back into master.
-- [ ] Do your magic!
+- [X] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's Repository). **Please don't merge your own pull request**
+- [X] Add your team lead as a reviewer on the pull-request
+- [X] Your team lead will count the project as complete by merging the branch back into master.
+- [X] Do your magic!
 
 ## Minimum Viable Product
 
 1. Set an initial state value through a reducer and render a list of todos from that state
-
+X
 
 1. Add a form that dispatches an "ADD_TODO" action to be able to add a todo item to your list
 
-
+X
 1. Build a function that let's you mark todo items as completed when you click on them
 
-
+X
 1. Build a function that let's you clear completed todos when you click on a "Clear Completed" button
+
 
 
 ### STEP 1 - Build a simple reducer and initial state
@@ -72,13 +73,13 @@ You get to choose how you want to set up your components. Please don't just do t
 
 ### STEP 3 - Adding todos
 
-- Build a form to add todos to your list
-- Build a function that will dispatch an action to add a new todo
-- Write the `case` in your reducer for adding a todo (You can create a unique id with `new Date()`)
+x Build a form to add todos to your list
+x Build a function that will dispatch an action to add a new todo
+x Write the `case` in your reducer for adding a todo (You can create a unique id with `new Date()`)
 
 ### STEP 4 - Toggle the completed field
 
-- Build a function that will dispatch an action to toggle a todo's completed field
+C Build a function that will dispatch an action to toggle a todo's completed field
 - Invoke this new function when you click on a todo
 - Style your todo to somehow show that it is completed (be creative here!)
 - Write the `case` in your reducer for toggling the completed property

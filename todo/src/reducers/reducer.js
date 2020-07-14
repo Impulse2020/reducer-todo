@@ -12,7 +12,7 @@ export const Reducer = (state, action) => {
         case "Add_Task":
             return{
             ...state,
-           list:[...state.list,{todo: action.payload, done:false, id:Date()} ]
+           list:[...state.list,{todo: action.payload, done:false, id:new Date()} ]
         }
         case "complete":
             return {

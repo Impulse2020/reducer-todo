@@ -2,7 +2,7 @@ import React, {useState, useReducer} from 'react';
 import logo from './logo.svg';
 import './App.css';
 import {initialState, Reducer} from './reducers/reducer';
-import Todolist from './todolist';
+import Todolist from './components/todolist';
 
 function App() {
 const [newTask, setNewTask] = useState("");
@@ -10,7 +10,7 @@ const [state , dispatch] = useReducer(Reducer, initialState);
 
 const handleChanges = e => {
 setNewTask(e.target.value)
-console.log(e.target.value);
+
 
 }
 const handleSubmit = e =>{
@@ -18,16 +18,16 @@ const handleSubmit = e =>{
   dispatch({ type: "Add_Task", payload: newTask})
 }
 const complete = e =>{
-e.target.value.done = true;  
+  dispatch({ type:complete})
 }
 
-console.log(state.list);
+
   return (
    
     <div className="App">
       <header className="App-header">
           <h1>Redux to do list!:</h1>
-          {state.list[0].todo }
+          
           <form>
             <label>
             <h4>Task:
@@ -37,8 +37,9 @@ console.log(state.list);
             </label>
           </form>
           
+      
+      <Todolist list={state.list} complete={complete} />
       </header>
-      <Todolist />
     </div>
   );
 }
